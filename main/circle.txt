@@ -1,0 +1,17 @@
+
+import cv2
+import numpy as np
+a = 1
+b = 1
+img = cv2.imread('1.JPG',0)
+
+circles = cv2.HoughCircles(img, cv2.cv.CV_HOUGH_GRADIENT, 1.2, 100)
+
+    a = a+1
+cv2.imwrite('blackwhite.JPG',img)
+
+cv2.imshow('image',img)
+cv2.waitKey(0) 
+           
+
+
